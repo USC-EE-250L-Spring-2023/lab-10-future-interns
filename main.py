@@ -148,7 +148,8 @@ def main():
     graph = px.bar(db, 
            x='Offload Mode', 
            y='Runtime', 
-           error_y='Std time')
+           error_y='Std time',
+           title='Process Runtime')
 
     # TODO: save plot to "makespan.png"
     graph.write_image('makespan.png')
